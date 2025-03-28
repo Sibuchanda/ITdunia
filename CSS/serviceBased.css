@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background: #0044cc;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* Cards Container */
+.company-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    justify-items: center;
+}
+
+/* Individual Cards */
+.card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.card img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #0044cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ffdd57;
+    color: #0044cc;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid #0044cc;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.backBtnSection{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.backBtnSection .back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #0044cc;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
