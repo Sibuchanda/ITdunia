@@ -26,13 +26,4 @@ function toggleAccordion() {
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 
-// ------------------Pop up design -----------
-// Function to Open Popup
-function openPopup() {
-    document.getElementById("popupOverlay").style.display = "flex";
-}
 
-// Function to Close Popup
-function closePopup() {
-    document.getElementById("popupOverlay").style.display = "none";
-}

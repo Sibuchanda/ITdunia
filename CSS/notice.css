@@ -1,0 +1,78 @@
+/* ------------Notice button and  Popup styles ---------- */
+
+.notice {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; 
+    height: 60px;
+    background-color: #0025df;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px; 
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.notice:hover {
+    background-color: #bb2207;
+    color: #d9e1f0;
+    box-shadow: 0 0 15px rgba(255, 132, 87, 0.8);
+    transform: scale(1.1);
+}
+
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Blur effect */
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.popup p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.popup button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background: #cc0000;
+}
+
