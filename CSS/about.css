@@ -1,0 +1,112 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Sigmar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background: url('https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg') no-repeat center center/cover;
+    font-family: "Satisfy", cursive;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 6rem;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+
+/* Social Media Colors */
+.linkedin { background: #0077b5; }
+.leetcode { background: #ff5722; }
+.github { background: black; }
+
+/* About Section */
+.about-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+.about-content h2 {
+    font-size: 18px;
+    color: black;
+}
+
+.heart {
+    color: red;
+}
+
+.notice {
+    font-size: 14px;
+    color: black;
+}
+
+.cute {
+    font-size: 16px;
+    color: black;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.footer-line {
+    width: 80px;
+    height: 2px;
+    background: black;
+    margin: 5px 0;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}

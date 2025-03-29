@@ -6,39 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITDunia</title>
     <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/accordion.css">
 </head>
-    <body>
-        <header>
-            <div class="titleContainer">
-                <h1>ITDunia - Explore <span class="auto-type">IT World</span></h1>
-                <p>Welcome to ITDunia, your ultimate source for insights into IT companies, services, and startups.<br>Stay informed and explore the latest trends in technology.</p>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="./pages/about.html">About me</a>
+        </nav>
+        <div class="titleContainer">
+            <h1>ITDunia - Explore <span class="auto-type">IT World</span></h1>
+            <p>Welcome to ITDunia, your ultimate source for insights into IT companies, services, and startups.<br>Stay
+                informed and explore the latest trends in technology.</p>
+        </div>
+    </header>
+    <main>
+        <section class="cards">
+            <a href="../pages/serviceBased.html" class="links">
+                <div class="card">
+                    <h2> 👉 Service Based</h2>
+                    <p>Companies that provide IT services<br> to other businesses.</p>
+                </div>
+            </a>
+            <a href="../pages/productBased.html" class="links">
+                <div class="card">
+                    <h2>👉 Product Based</h2>
+                    <p>Companies that develop and sell<br> their own software products.</p>
+                </div>
+            </a>
+            <a href="../pages/startups.html" class="links">
+                <div class="card">
+                    <h2>👉 Startups</h2>
+                    <p>Emerging companies innovating <br> in the IT sector.</p>
+                </div>
+            </a>
+        </section>
+        <div class="notice">
+            NOTICE
+        </div>
+
+        <!-- Popup Modal -->
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup">
+                <h2>Important Notice</h2>
+                <p>
+                    The eligibility criteria of each company may be updated frequently.
+                    Before checking the eligibility on our page, please verify the details with the official website
+                    provided on each company page.
+                </p>
+                <button onclick="closePopup()">Close</button>
             </div>
-            <nav>
-                <a href="">Home</a>
-                <a href="">About</a>
-            </nav>
-        </header>
-            <section class="cards">
-                <a href="../pages/serviceBased.html" class="links">
-                    <div class="card">
-                        <h2>Service Based</h2>
-                        <p>Companies that provide IT services<br> to other businesses.</p>
+        </div>
+
+
+
+        <div class="container">
+            <h2>HR Interview Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Tell me about
+                            yourself.</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"I have a background in [your field], with experience in [mention key areas]. I'm passionate
+                            about [your interests related to the job] and have developed skills in [list relevant
+                            skills]. I'm excited about the opportunity to contribute to your team."</p>
                     </div>
-                </a>
-                <a href="../pages/productBased.html" class="links">
-                    <div class="card">
-                        <h2>Product Based</h2>
-                        <p>Companies that develop and sell<br>  their own software products.</p>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why are you
+                            interested in this position?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"I admire [Company Name]'s commitment to [specific value or project]. This role aligns with
+                            my skills in [mention skills] and my passion for [industry or field]. I'm eager to
+                            contribute and grow within your company."</p>
                     </div>
-                </a>
-                <a href="../pages/startups.html" class="links">
-                    <div class="card">
-                        <h2>Startups</h2>
-                        <p>Emerging companies innovating <br> in the IT sector.</p>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What are your
+                            strengths?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p> "I excel in [mention a strength], which has helped me [give an example]. I'm also strong in
+                            [another strength], allowing me to [another example]."</p>
                     </div>
-                </a>
-            </section>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script src="./JS/main.js"></script>
-    </body>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What are your
+                            weaknesses?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"In the past, I've found [mention a weakness] challenging. However, I've taken steps to
+                            improve by [explain actions taken], which has led to [positive outcome]."</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Why do you want
+                            to work here?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"I respect [Company Name]'s focus on [specific aspect]. I believe my skills in [mention
+                            skills] would be a good match, and I'm excited about the prospect of contributing to your
+                            team."</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Where do you see
+                            yourself in five years?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"I aim to grow within the company, taking on more responsibilities and enhancing my skills in
+                            [mention area]. My goal is to contribute significantly to the team's success."</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can you describe
+                            a challenging situation and how you handled it?</span><span class="icon"
+                            aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"In my previous role, I faced [describe challenge]. I addressed it by [explain actions
+                            taken], which resulted in [positive outcome]."</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What is your
+                            dream job?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"My ideal job involves [mention aspects], allowing me to utilize my skills in [mention
+                            skills] and contribute meaningfully to the company's goals."</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do you
+                            handle stress and pressure?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"I manage stress by [mention strategies], which helps me stay focused and perform effectively
+                            under pressure."</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Do you have any
+                            questions for us?</span><span class="icon" aria-hidden="true"></span></button>
+                    <div class="accordion-content">
+                        <p>"Yes, I'm curious about [ask about company culture, growth opportunities, or specific
+                            projects]."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 ITDunia. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
 </html>
