@@ -1,124 +1,124 @@
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* General Styles */
+
+* {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+
 body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f0f8ff;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #ecf0f1;
+    font-size: 16px;
+    padding-top: 330px;
+    transition: padding-top 0.5s ease;
 }
 
-/* Navbar */
 header {
-    background: #0044cc;
-    padding: 15px 0;
+    width: 100%;
+    height: 300px;
+    background-color: #3498db;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
 }
 
-nav {
+.titleContainer{
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+    flex-direction: column;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.titleContainer h1 {
+    font-size: 42px;
     color: white;
-    display: flex;
-    align-items: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+.titleContainer p {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.titleContainer .auto-type {
+ color: rgb(255, 143, 14);
 }
 
-/* Navbar Menu */
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+header nav {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+header nav a {
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: 0.3s ease-in-out;
+    border-radius: 2px;
 }
 
-nav ul li a:hover {
-    color: #ffdd57;
+header nav a:hover {
+    box-shadow: 0 0 0 1px #fff;
 }
 
-/* Main Content */
-#main {
-    flex: 1; /* Takes full height minus footer */
+
+body.sticky-header {
+    padding-top: 100px;
+}
+
+body.sticky-header header {
+    height: 60px;
+    background-color: rgba(52, 152, 219, 0.9);
+}
+
+
+.cards {
+    margin: 20px auto; 
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.links{
+    width: 26%;
+    height: 28vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-/* Introduction Section */
-.intro {
     text-align: center;
-    padding: 50px 20px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
 }
 
-.intro h1 {
-    font-size: 40px;
-    color: #0044cc;
-    margin-bottom: 10px;
-    font-family: "Bungee Tint", sans-serif;
+.links .card h2{
+    color: rgba(52, 152, 219, 0.9);
+}
+.links .card p{
+   color: rgba(174, 173, 173, 0.988);
 }
 
-.intro p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Cards Section */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover {
+.links:hover{
     transform: scale(1.05);
-    background: #e6f0ff;
-}
-
-.card h2 {
-    color: #0044cc;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background: #0044cc;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+    box-shadow: 0 0 20px rgb(164, 211, 253), 0 0 30px rgb(161, 205, 219);
 }
