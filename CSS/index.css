@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
-    
+
 }
 
 
@@ -24,12 +24,33 @@ header {
     text-align: center;
 }
 
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+    margin-left: 6rem;
+}
 
-.titleContainer{
+.logoContainer span {
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+}
+
+.logoContainer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+
+.titleContainer {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap:6px;
+    gap: 6px;
 }
 
 .titleContainer h1 {
@@ -40,6 +61,7 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
 }
+
 .titleContainer p {
     font-size: 16px;
     color: white;
@@ -48,15 +70,22 @@ header {
     font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
+
 .titleContainer .auto-type {
- color: rgb(255, 143, 14);
+    color: rgb(255, 143, 14);
 }
 
+.navBarConatiner{
+    margin-right: 10rem;
+}
 header nav {
     height: auto;
     padding: 8px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav a {
@@ -85,7 +114,7 @@ body.sticky-header header {
 
 
 .cards {
-    margin: 20px auto; 
+    margin: 20px auto;
     padding: 16px;
     display: flex;
     align-items: center;
@@ -93,7 +122,7 @@ body.sticky-header header {
     justify-content: space-evenly;
 }
 
-.links{
+.links {
     width: 26%;
     height: 28vh;
     display: flex;
@@ -103,21 +132,22 @@ body.sticky-header header {
     text-decoration: none;
     padding: 15px;
     border-radius: 4px;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: all 0.3s ease-in-out;
 }
 
-.links .card h2{
+.links .card h2 {
     color: rgba(52, 152, 219, 0.9);
 }
-.links .card p{
-   color: rgba(174, 173, 173, 0.988);
+
+.links .card p {
+    color: rgba(174, 173, 173, 0.988);
 }
 
-.links:hover{
+.links:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgb(164, 211, 253), 0 0 30px rgb(161, 205, 219);
 }
@@ -135,83 +165,7 @@ footer {
     height: 10vh;
 }
 
-
-/* ------------Notice button and  Popup styles ---------- */
-
-.notice {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px; 
-    height: 60px;
-    background-color: #0025df;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 60px; 
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+footer img{
+    width: 20px;
+    height: 20px;
 }
-
-.notice:hover {
-    background-color: #bb2207;
-    color: #d9e1f0;
-    box-shadow: 0 0 15px rgba(255, 132, 87, 0.8);
-    transform: scale(1.1);
-}
-
-
-
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Blur effect */
-    backdrop-filter: blur(5px);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.popup {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.popup h2 {
-    margin: 0;
-    font-size: 22px;
-    color: #333;
-}
-
-.popup p {
-    font-size: 16px;
-    color: #555;
-    margin: 15px 0;
-}
-
-.popup button {
-    background: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.popup button:hover {
-    background: #cc0000;
-}
-
-

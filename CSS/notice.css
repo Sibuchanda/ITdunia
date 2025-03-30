@@ -1,5 +1,18 @@
 /* ------------Notice button and  Popup styles ---------- */
 
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Zoom In */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 .notice {
     position: fixed;
     bottom: 20px;
@@ -15,6 +28,7 @@
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    animation: zoomEffect 1.5s infinite ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
